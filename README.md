@@ -12,6 +12,7 @@ Useful links to start with:
 ##### [**3. Google colab**](https://colab.research.google.com/)
 
 *Please note that this session is NOT a comprehensive Python tutorial. We just covered the topics we need for the upcoming sessions. there are hundreds of Python tutorials which you can watch online. For example:
+
 2- Python tutorials:
 
 ##### [**Python crash course (~10 min)**](https://www.youtube.com/watch?v=fWjsdhR3z3c)
