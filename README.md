@@ -28,3 +28,23 @@ This session covered user-defined functions, scope, return values, and basic err
 - Built-in vs custom functions
 - NumPy arrays & operations
 - Vectorized math with NumPy
+
+## Session 4: Introduction to Bayesian Statistics
+
+We introduced the **Bayesian framework**, where probability represents a degree of belief, and updated beliefs are computed after observing data using **Bayes' Theorem**:
+
+\[
+P(\text{hypothesis} \mid \text{data}) = \frac{P(\text{data} \mid \text{hypothesis}) \cdot P(\text{hypothesis})}{P(\text{data})}
+\]
+
+- **Prior** \( P(\text{hypothesis}) \): Initial belief before observing data  
+- **Likelihood** \( P(\text{data} \mid \text{hypothesis}) \): How likely the data is under a hypothesis  
+- **Posterior** \( P(\text{hypothesis} \mid \text{data}) \): Updated belief after seeing data
+
+We discussed how Bayesian thinking aligns with human reasoning and demonstrated how changing priors affects posteriors. Students also completed an assignment applying Bayesian reasoning in practice.
+
+📌 **Topics**:
+- Bayes' Rule and conditional probabilities
+- Prior, likelihood, and posterior interpretation
+- Real-world applications of Bayesian inference
+- Hands-on homework to reinforce concepts
