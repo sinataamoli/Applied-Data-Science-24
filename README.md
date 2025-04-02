@@ -62,3 +62,50 @@ We applied **Laplace smoothing** to avoid zero probabilities for unseen words, a
 - SMS dataset preprocessing with NLTK
 - Stop word filtering & stemming
 - Likelihood computation & model evaluation
+
+## Session 6 & 7: NLP & Naive Bayes with Real Data
+
+In these sessions, we extended the Naive Bayes spam classifier to a real-world dataset of ~4,000 SMS messages using Natural Language Processing (NLP). We explored the entire preprocessing pipeline:
+
+- **Stop word removal** to exclude uninformative common words  
+- **Stemming** to reduce words to their root forms  
+- **Punctuation removal** to clean the dataset  
+- **Encoding** categorical labels (spam/ham) as numeric values for model training
+
+We discussed Laplace smoothing to avoid zero-frequency problems, and used **NLTK** for most preprocessing steps. A hands-on walkthrough was done to compute the spam probability of a new message using learned word distributions.
+
+📌 **Topics**:
+- NLP basics: stop words, stemming, bag-of-words
+- Data cleaning for text classification
+- SMS dataset preprocessing with NLTK
+- Applying Naive Bayes to real data and interpreting results
+
+## Session 8: Markov Chain Monte Carlo (MCMC)
+
+In this session, we introduced **Markov Chain Monte Carlo (MCMC)** methods, used for sampling from complex probability distributions, particularly posteriors in high-dimensional Bayesian inference problems.
+
+We demonstrated a Markov Chain using a weather model (Sunny/Rainy), where the state of each day depends only on the previous day. Given a transition matrix and an initial condition, we computed the long-term probability of each state using **matrix multiplication** and eigenvectors.
+
+Key takeaways included the idea that MCMC allows probabilistic exploration of a space where direct computation is intractable.
+
+📌 **Topics**:
+- Basics of MCMC sampling
+- Markov property and state transitions
+- Transition matrix and long-term equilibrium
+- Link between linear algebra and probability
+
+## Session 9: Support Vector Machines (SVM)
+
+We introduced **Support Vector Machines (SVM)** as a supervised learning algorithm for binary classification. SVMs aim to find the **optimal separating hyperplane** that maximizes the margin between two classes in a dataset.
+
+Given labeled data points x_i with labels y_i ∈ {-1, +1}, the distance from a point to the decision boundary is defined by the projection onto the normal vector w:
+
+**D = w · x + b**
+
+Points on one side of the margin are classified as +1 and on the other as -1. We discussed the optimization problem behind SVMs and how maximizing the margin leads to better generalization.
+
+📌 **Topics**:
+- Linear classification with maximum margin
+- Decision boundaries and support vectors
+- Optimization of SVM objective
+- Conceptual foundation for kernel methods
