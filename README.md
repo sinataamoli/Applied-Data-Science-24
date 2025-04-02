@@ -48,3 +48,21 @@ We discussed how Bayesian thinking aligns with human reasoning and demonstrated 
 - Prior, likelihood, and posterior interpretation
 - Real-world applications of Bayesian inference
 - Hands-on homework to reinforce concepts
+
+## Session 5: Naive Bayes & Spam Filtering
+
+We applied **Bayesian reasoning** to build a Naive Bayes classifier for text classification. Using a labeled dataset of SMS messages, we predicted whether a message is *spam* or *ham* based on word frequency.
+
+Naive Bayes assumes conditional independence among features. Given a message with a "bag of words," the spam probability is computed using:
+
+\[
+P(\text{Spam} \mid w_1, w_2, ..., w_n) \propto P(\text{Spam}) \cdot \prod_{i=1}^n P(w_i \mid \text{Spam})
+\]
+
+We applied **Laplace smoothing** to avoid zero probabilities for unseen words, and handled out-of-vocabulary words by removing them from the input. The example demonstrated a classification based on the words “write” and “password,” showing ~70% spam probability.
+
+📌 **Topics**:
+- Naive Bayes formula & assumptions
+- SMS dataset preprocessing with NLTK
+- Stop word filtering & stemming
+- Likelihood computation & model evaluation
