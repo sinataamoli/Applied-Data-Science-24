@@ -1,42 +1,42 @@
-# 📊 Introduction to Applied Data Science – PHYS247
+# Introduction to Applied Data Science – PHYS247
 
-Welcome to the official GitHub repository for **PHYS247 – Introduction to Applied Data Science** at the **University of California, Riverside**. This course is designed to introduce core concepts in Python programming, statistics, machine learning, and data-driven modeling through hands-on examples.
+This repository contains materials for **PHYS247: Introduction to Applied Data Science**, a course offered at the University of California, Riverside. It aims to introduce students to core tools, techniques, and ways of thinking in modern data science using Python.
 
-👨‍🏫 **Instructor:** Prof. Bahram Mobasher  
-🧑‍💻 **Teaching Assistant:** [Sina Taamoli](https://sinataamoli.github.io/)  
-📬 **Contact:** sina.taamoli@email.ucr.edu
-
----
-
-## 📦 Tools & Libraries Used
-
-We used a variety of open-source tools throughout the course:
-
-- Python 3 (via Anaconda)
-- [NumPy](https://numpy.org/)
-- [Pandas](https://pandas.pydata.org/)
-- [Matplotlib](https://matplotlib.org/)
-- [NLTK](https://www.nltk.org/)
-- [scikit-learn](https://scikit-learn.org/)
-- [Google Colab](https://colab.research.google.com/)
+**Instructor**: Prof. Bahram Mobasher  
+**Teaching Assistant**: [Sina Taamoli](https://sinataamoli.github.io/)  
+**Contact**: sina.taamoli@email.ucr.edu
 
 ---
 
-## 📘 Course Outline
+## Tools and Libraries
 
-Each session builds on the previous one, starting from the fundamentals of Python programming and progressing into data science, machine learning, and probabilistic inference.
+The course utilized a wide array of industry-standard open-source packages:
+
+- **Python 3 (Anaconda)**
+- [NumPy](https://numpy.org/) – numerical computing
+- [Pandas](https://pandas.pydata.org/) – data structures and analysis
+- [Matplotlib](https://matplotlib.org/) – data visualization
+- [NLTK](https://www.nltk.org/) – text processing
+- [scikit-learn](https://scikit-learn.org/) – machine learning
+- [Google Colab](https://colab.research.google.com/) – cloud-based notebook execution
 
 ---
 
-## 🔧 Session 1: Python Installation & Basics
+## Course Overview
 
-We began with installing Anaconda, VSCode, and Google Colab. This session covered:
+The course begins with programming fundamentals and gradually incorporates statistical inference, probabilistic modeling, and machine learning techniques. By the end, students will be able to apply data science principles to real-world problems.
 
-- Basic syntax and math operations
-- Variables, strings, and types
-- Introduction to Python scripting
+---
 
-📌 **Resources**:
+## Session 1: Python Installation & Basics
+
+We introduced Python programming and walked through setting up development environments via Anaconda, VSCode, and Google Colab. Students learned about:
+
+- Basic syntax and interactive scripting
+- Data types and expressions
+- Simple mathematical operations and variables
+
+**Resources**:
 - [Anaconda](https://docs.anaconda.com/free/anaconda/index.html)
 - [VSCode](https://code.visualstudio.com/)
 - [Google Colab](https://colab.research.google.com/)
@@ -45,105 +45,105 @@ We began with installing Anaconda, VSCode, and Google Colab. This session covere
 
 ---
 
-## 🔁 Session 2: Data Structures & Control Flow
+## Session 2: Data Structures & Control Flow
 
-We explored essential Python structures:
+This session covered foundational programming constructs necessary for data processing:
 
-- Lists, tuples, dictionaries, sets
-- Indexing, slicing, and looping (`for`, `while`)
-- Conditional logic and `if-else` flow
+- Lists, tuples, dictionaries, and sets
+- Slicing, indexing, and nested data structures
+- Conditional statements (`if`, `else`) and looping (`for`, `while`)
+- Use of control keywords like `break` and `continue`
 
----
-
-## 🧮 Session 3: Functions & NumPy
-
-Building reusable code with functions and diving into vectorized operations using NumPy:
-
-- Writing functions with parameters and return values
-- Understanding variable scope
-- Introduction to arrays, broadcasting, and efficient math
+Applications: These skills are critical for parsing and processing structured datasets and implementing custom algorithms.
 
 ---
 
-## 📊 Session 4: Introduction to Bayesian Statistics
+## Session 3: Functions and NumPy
 
-Bayesian thinking was introduced through:
+We introduced the concept of modular code through user-defined functions and then transitioned into efficient numerical computing with NumPy.
 
-> **P(hypothesis | data) = [P(data | hypothesis) * P(hypothesis)] / P(data)**
+- Function definitions, return values, and scope
+- Built-in vs. user-defined functions
+- Vectorization, broadcasting, and array operations using NumPy
 
-We covered:
-- Prior, likelihood, posterior
-- Conditional probability and belief updates
-- Real-world reasoning with Bayesian logic
-
----
-
-## ✉️ Session 5: Naive Bayes & Spam Filtering
-
-We implemented a **Naive Bayes classifier** on a labeled SMS dataset.
-
-- Text preprocessing and tokenization
-- Word probability calculations
-- Classification using bag-of-words & Laplace smoothing
-
-📌 Tools used: `NLTK`, `collections.Counter`
+Applications: Enables high-performance computation for scientific simulations, data manipulation, and model evaluation.
 
 ---
 
-## 🧠 Session 6 & 7: NLP & Naive Bayes on Real Data
+## Session 4: Bayesian Statistics
 
-We scaled up our model to a 4,000+ message dataset:
+Bayesian inference was introduced as a method for updating probabilities based on observed data. Using Bayes' Theorem:
 
-- Natural Language Processing pipeline:  
-  stop word removal, stemming, and punctuation filtering
-- Label encoding & feature extraction
-- Spam probability modeling using real-world messages
+**P(hypothesis | data) = [P(data | hypothesis) * P(hypothesis)] / P(data)**
 
-📌 Tools used: `nltk`, `pandas`, `scikit-learn`
+Topics:
+- Prior, likelihood, and posterior probability
+- Subjective vs. frequentist interpretations of probability
+- Real-world reasoning under uncertainty
 
----
-
-## 🎲 Session 8: Markov Chain Monte Carlo (MCMC)
-
-We modeled probabilistic processes like weather prediction using **Markov Chains**.
-
-- Transition matrices & state probabilities  
-- Eigenvector convergence for steady states  
-- Motivation for using MCMC in high-dimensional Bayesian models
-
-📌 Concepts bridged with linear algebra
-
-🧠 Fun fact: This lays the groundwork for deep generative models and probabilistic simulations.
+Applications: Used in spam filtering, diagnostics, risk analysis, and recommendation systems.
 
 ---
 
-## 🧭 Session 9: Support Vector Machines (SVM)
+## Session 5: Naive Bayes & Text Classification
 
-We explored the SVM algorithm for binary classification.
+We implemented a Naive Bayes classifier to detect spam messages using a bag-of-words approach.
 
-- Finding the optimal separating hyperplane
-- Maximizing the margin between data classes
-- Decision function: **D = w · x + b**
+- Calculating word-level probabilities
+- Laplace smoothing to avoid zero-probability issues
+- Evaluation using predictive posterior probabilities
 
-📌 Topics:
-- Support vectors and geometric intuition
-- Linear classifiers
-- Optimization-based learning
+Applications: Widely used in spam detection, sentiment analysis, and document classification.
 
 ---
 
-## 🌐 More Resources
+## Session 6 & 7: Natural Language Processing (NLP) with Real Data
 
-- [Python for Data Science Handbook (Jake VanderPlas)](https://jakevdp.github.io/PythonDataScienceHandbook/)
+Using a dataset of 4,000+ SMS messages, we built a complete spam classifier with text preprocessing and machine learning:
+
+- Tokenization, stop word removal, and stemming
+- Data cleaning and transformation
+- Encoding labels and generating feature vectors
+
+Applications: Foundations of text-based AI systems including search engines, recommendation engines, and chatbots.
+
+---
+
+## Session 8: Markov Chain Monte Carlo (MCMC)
+
+We introduced MCMC, a class of algorithms for sampling from complex probability distributions when direct computation is intractable.
+
+- Markov Chains and state transitions
+- Transition matrices and steady-state probabilities
+- Relevance of eigenvectors in convergence
+
+Applications: Used in physics, Bayesian computation, natural language generation, and probabilistic inference in large-scale systems.
+
+---
+
+## Session 9: Support Vector Machines (SVM)
+
+We concluded the course with Support Vector Machines, a supervised learning algorithm for binary classification.
+
+- Hyperplane separation and decision boundaries
+- Maximizing margin between classes
+- Role of support vectors in optimization
+
+Applications: Used in image recognition, gene classification, handwriting detection, and bioinformatics.
+
+---
+
+## Supplementary Learning Materials
+
+- [Python for Data Science Handbook – Jake VanderPlas](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
-- [StatQuest (YouTube)](https://www.youtube.com/user/joshstarmer)
+- [StatQuest by Josh Starmer (YouTube)](https://www.youtube.com/user/joshstarmer)
+- [The Elements of Statistical Learning (Free Book)](https://web.stanford.edu/~hastie/ElemStatLearn/)
 
 ---
 
-## 🏁 Summary
+## Final Remarks
 
-This course blends theoretical foundations with practical coding to develop the mindset and skillset of a data scientist. Whether it’s classification, inference, or modeling uncertainty — you’ll find the tools introduced here highly transferable to real-world applications.
+This course provides a comprehensive and applied introduction to data science. It emphasizes both the programming foundations and the statistical thinking required to analyze data, build models, and draw insights in a reproducible way.
 
----
-
-![data science banner](https://cdn.analyticsvidhya.com/wp-content/uploads/2015/09/Data-Science-Life-Cycle.png)
+Students are encouraged to build on these foundations with deeper explorations into machine learning, data visualization, and domain-specific analytics.
