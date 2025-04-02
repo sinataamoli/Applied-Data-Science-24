@@ -31,15 +31,13 @@ This session covered user-defined functions, scope, return values, and basic err
 
 ## Session 4: Introduction to Bayesian Statistics
 
-We introduced the **Bayesian framework**, where probability represents a degree of belief, and updated beliefs are computed after observing data using **Bayes' Theorem**:
+We introduced the **Bayesian framework**, where probability represents a degree of belief. Updated beliefs are computed after observing data using **Bayes’ Theorem**:
 
-\[
-P(\text{hypothesis} \mid \text{data}) = \frac{P(\text{data} \mid \text{hypothesis}) \cdot P(\text{hypothesis})}{P(\text{data})}
-\]
+**P(hypothesis | data) = [P(data | hypothesis) * P(hypothesis)] / P(data)**
 
-- **Prior** \( P(\text{hypothesis}) \): Initial belief before observing data  
-- **Likelihood** \( P(\text{data} \mid \text{hypothesis}) \): How likely the data is under a hypothesis  
-- **Posterior** \( P(\text{hypothesis} \mid \text{data}) \): Updated belief after seeing data
+- **Prior**: P(hypothesis) – belief before seeing data  
+- **Likelihood**: P(data | hypothesis) – how well data fits the hypothesis  
+- **Posterior**: P(hypothesis | data) – updated belief after seeing data
 
 We discussed how Bayesian thinking aligns with human reasoning and demonstrated how changing priors affects posteriors. Students also completed an assignment applying Bayesian reasoning in practice.
 
@@ -53,13 +51,11 @@ We discussed how Bayesian thinking aligns with human reasoning and demonstrated 
 
 We applied **Bayesian reasoning** to build a Naive Bayes classifier for text classification. Using a labeled dataset of SMS messages, we predicted whether a message is *spam* or *ham* based on word frequency.
 
-Naive Bayes assumes conditional independence among features. Given a message with a "bag of words," the spam probability is computed using:
+Naive Bayes assumes conditional independence among features. Given a message with a "bag of words," the spam probability is computed as:
 
-\[
-P(\text{Spam} \mid w_1, w_2, ..., w_n) \propto P(\text{Spam}) \cdot \prod_{i=1}^n P(w_i \mid \text{Spam})
-\]
+**P(Spam | w1, w2, ..., wn) ∝ P(Spam) * P(w1 | Spam) * P(w2 | Spam) * ... * P(wn | Spam)**
 
-We applied **Laplace smoothing** to avoid zero probabilities for unseen words, and handled out-of-vocabulary words by removing them from the input. The example demonstrated a classification based on the words “write” and “password,” showing ~70% spam probability.
+We applied **Laplace smoothing** to avoid zero probabilities for unseen words, and handled out-of-vocabulary words by removing them from the input. A demonstration classified a message as spam with ~70% probability based on its word content.
 
 📌 **Topics**:
 - Naive Bayes formula & assumptions
